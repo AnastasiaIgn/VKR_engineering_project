@@ -1,0 +1,23 @@
+# Core dependencies
+torch==2.0.1
+sentence-transformers==2.2.2
+transformers==4.30.2
+huggingface-hub==0.14.1
+
+# Vector database
+chromadb==0.4.22
+
+# Data processing
+numpy==1.24.3
+pandas
+scikit-learn
+
+# Document loading
+pypdf
+python-docx
+
+# Web interface
+streamlit
+
+# Utilities
+tqdm
