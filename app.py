@@ -1,8 +1,3 @@
-"""
-Streamlit interface for document search, graph analysis and risk assessment.
-For Master's thesis - cognitive interface for project documentation.
-"""
-
 import streamlit as st
 import pickle
 import json
