@@ -1,8 +1,3 @@
-"""
-Analyze project risks and inconsistencies using semantic links.
-For Master's thesis - demonstrates context analysis method.
-"""
-
 import json
 import re
 from pathlib import Path
@@ -84,7 +79,7 @@ for contradiction in contradictions:
     if not risk_types:
         risk_types = ['operational']  # общий операционный риск
     
-    # Оценка серьезности (на основе эвристик)
+    # Оценка серьезности 
     severity = 'medium'
     high_risk_keywords = ['завышение', 'штраф', 'суд', 'претензия', 'срыв']
     for keyword in high_risk_keywords:
@@ -92,7 +87,7 @@ for contradiction in contradictions:
             severity = 'high'
             break
     
-    # Извлечение числовых значений (если есть)
+    # Извлечение числовых значений 
     numbers = re.findall(r'(\d+(?:[.,]\d+)?)\s*(м3|м2|шт|т|км|руб|тыс|млн)', combined_text)
     
     risks.append({
