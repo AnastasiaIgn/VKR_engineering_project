@@ -9,7 +9,7 @@ print("="*60)
 print("🔄 Переобработка документов (исправленная версия)")
 print("="*60)
 
-# 1. Загрузка документов БЕЗ агрессивной очистки
+# 1. Загрузка документов 
 print("\n📂 Загрузка документов...")
 
 docs_dir = Path("docs")
@@ -29,7 +29,7 @@ for file_path in docs_dir.iterdir():
         
         content = '\n'.join(text_parts)
         
-        # Мягкая очистка (удаляем только явный мусор)
+        # Мягкая очистка 
         content = re.sub(r'https?://[^\s]+', '', content)
         content = re.sub(r'\b[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Z|a-z]{2,}\b', '', content)
         
