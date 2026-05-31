@@ -1,8 +1,3 @@
-"""
-Extract semantic links between document chunks using LLM (emulation mode).
-For Master's thesis - demonstrates the method with rule-based emulation.
-"""
-
 import pickle
 import json
 import re
