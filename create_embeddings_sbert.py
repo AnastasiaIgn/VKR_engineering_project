@@ -1,4 +1,4 @@
-"""Create embeddings with Sentence-BERT - FULLY FIXED."""
+"""Create embeddings with Sentence-BERT """
 import pickle
 import time
 from pathlib import Path
@@ -53,12 +53,11 @@ print("   Это может занять 5-10 минут...")
 
 start_time = time.time()
 
-# Используем encode с convert_to_numpy=True
 embeddings = model.encode(
     texts,
     show_progress_bar=True,
     batch_size=32,
-    convert_to_numpy=True  # Это ключевой параметр
+    convert_to_numpy=True  
 )
 
 # Убеждаемся, что это numpy array
